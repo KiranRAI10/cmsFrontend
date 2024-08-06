@@ -1,19 +1,12 @@
+import Button from '../../components/Button/Button'
+import Navbar from '../../components/Navbar/Navbar'
 import './Contact.css'
 
 const Contact = () => {
   return (
     <div>
-        <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <Navbar/>
+        
     
     <main>
         <section class="contact-details">
@@ -41,7 +34,7 @@ const Contact = () => {
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <Button title="Submit"/>
             </form>
         </section>
     </main>

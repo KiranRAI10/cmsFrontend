@@ -1,19 +1,15 @@
+import Button from '../../components/Button/Button'
+import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 
 const Home = () => {
   return (
     <div>
-        <header>
-        <h1>Welcome to My Homepage</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <Navbar/>
+        <Button title="Login" color ="teal"  subTitle = "Hello world"/>
+        <Button title="Register" color = "red" subTitle = "Hello world"/>
+
+    
     
     <main>
         <section id="home">
