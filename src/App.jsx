@@ -1,5 +1,9 @@
 
 import './App.css'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Contact from './pages/Contact/Contact'
 
 function App() {
   const name = "Kiran"
@@ -7,11 +11,18 @@ function App() {
  
 
   return (
-    <div>
-      <h1>Hello World</h1>
-      <h1>{name+" "+subName}</h1>
-      <h2 style={{ color: "red"}}>Bye World</h2>
-    </div>
+    
+    <BrowserRouter>
+    <Routes>
+      <Route path = "/" element= {<Home/> } />
+      <Route path = "/about" element= {<About/> } />
+      <Route path = "/contact" element= {<Contact/> } />
+
+
+
+    </Routes>
+    
+    </BrowserRouter>
   )
 }
 
